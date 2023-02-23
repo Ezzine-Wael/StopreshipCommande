@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaapplication1.TestpageController">
+   <children>
+      <Label fx:id="zzzzzz" layoutX="87.0" layoutY="269.0" text="Label" />
+      <Label layoutX="216.0" layoutY="167.0" text="Prix" />
+      <Label layoutX="232.0" layoutY="47.0" text="Description" />
+      <Label fx:id="prix" layoutX="256.0" layoutY="167.0" text="Prix2" />
+      <TextArea fx:id="description" layoutX="202.0" layoutY="74.0" prefHeight="71.0" prefWidth="240.0" />
+      <Label layoutX="354.0" layoutY="13.0" text="Categorie" />
+      <Label fx:id="categorie" layoutX="354.0" layoutY="39.0" text="Categorie2" />
+     <Label fx:id="titre" layoutX="232.0" layoutY="13.0" text="Titre" />
+      <Label fx:id="titre1" layoutX="242.0" layoutY="23.0" text="Titre" />
+      <Label fx:id="titre11" layoutX="252.0" layoutY="33.0" text="Titre" />
+   </children>
+</AnchorPane>

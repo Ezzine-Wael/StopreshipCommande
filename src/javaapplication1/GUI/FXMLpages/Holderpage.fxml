@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" fx:id="mainholder" prefHeight="423.0" prefWidth="702.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaapplication1.GUI.Controllers.HolderpageController">
+   <children>
+      <Button fx:id="shop" layoutX="111.0" layoutY="354.0" mnemonicParsing="false" onAction="#openshop" text="Shop" />
+      <Button fx:id="ConfirmePanier" layoutX="561.0" layoutY="354.0" mnemonicParsing="false" onAction="#confirmerpanier" text="Confirmer Panier" />
+      <Button fx:id="historique" layoutX="312.0" layoutY="354.0" mnemonicParsing="false" onAction="#displayHistorique" text="Historique" />
+      <Button fx:id="changeuser" layoutX="431.0" layoutY="384.0" mnemonicParsing="false" onAction="#ChangeUser" text="Change User" />
+      <AnchorPane fx:id="shoppingdisplay" prefHeight="342.0" prefWidth="752.0">
+         <children>
+            <ScrollPane layoutY="10.0" prefHeight="300.0" prefWidth="468.0">
+               <content>
+                  <VBox fx:id="shopproduit" prefHeight="295.0" prefWidth="464.0" spacing="20.0">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+            <ScrollPane layoutX="470.0" layoutY="10.0" prefHeight="300.0" prefWidth="282.0">
+               <content>
+                  <VBox fx:id="Paniercourrante" prefHeight="300.0" prefWidth="429.0" spacing="20.0">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="affichage" layoutX="8.0" layoutY="9.0" prefHeight="300.0" prefWidth="744.0">
+         <children>
+            <ScrollPane fitToHeight="true" prefHeight="300.0" prefWidth="430.0">
+               <content>
+                               <VBox fx:id="commandeContainer" maxHeight="350.0" maxWidth="406.0" prefHeight="150.0" prefWidth="406.0" spacing="20.0">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding></VBox>
+               </content>
+            </ScrollPane>
+            <ScrollPane fitToHeight="true" layoutX="438.0" prefHeight="300.0" prefWidth="298.0">
+               <content>
+                  <VBox fx:id="produit_container" prefHeight="118.0" prefWidth="290.0" spacing="20.0">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding></VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
